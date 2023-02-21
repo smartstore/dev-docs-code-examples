@@ -1,0 +1,19 @@
+﻿<Language Name="Deutsch" IsDefault="true" IsRightToLeft="false">
+  <LocaleResource Name="Plugins.FriendlyName.MyOrg.HelloWorld" AppendRootKey="false">
+    <Value>Hallo Welt</Value>
+  </LocaleResource>
+  <LocaleResource Name="Plugins.Description.MyOrg.HelloWorld" AppendRootKey="false">
+    <Value>Dieses Plugin sagt Hallo.</Value>
+  </LocaleResource>
+  
+  <LocaleResource Name="Plugins.MyOrg.HelloWorld" AppendRootKey="false">
+    <Children>
+      <LocaleResource Name="Name">
+        <Value>Text zum Speichern</Value>
+      </LocaleResource>
+      <LocaleResource Name="Name.Hint">
+        <Value>Geben Sie hier den Text an, der in der Setting gespeichert werden soll.</Value>
+      </LocaleResource>
+    </Children>
+  </LocaleResource>
+</Language> 

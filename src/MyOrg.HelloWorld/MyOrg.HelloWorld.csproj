@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+    <PropertyGroup>
+        <Product>A Hello World module for Smartstore</Product>
+        <OutputPath>..\..\Smartstore.Web\Modules\MyOrg.HelloWorld</OutputPath>
+        <OutDir>$(OutputPath)</OutDir>
+    </PropertyGroup>
+</Project>
