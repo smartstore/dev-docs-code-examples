@@ -3,7 +3,7 @@
 
 @echo off
 
-set linkedmodules=MyOrg.HelloWorld,MyOrg.HelloWorldTabs
+set linkedmodules=MyOrg.HelloWorld,MyOrg.TabsTutorial,MyOrg.MenuTutorial,MyOrg.WidgetTutorial,MyOrg.BlockTutorial,MyOrg.BlockTutorialAdvanced,MyOrg.ExportTutorial,MyOrg.DomainTutorial
 
 set linksrc=%CD%\..\Smartstore\src\Smartstore.Modules
 set linktarget=%CD%\src
