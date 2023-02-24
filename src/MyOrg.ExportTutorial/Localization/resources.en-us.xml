@@ -1,0 +1,40 @@
+﻿<Language Name="English" IsDefault="false" IsRightToLeft="false">
+    <LocaleResource Name="Plugins.FriendlyName.MyOrg.ExportTutorial" AppendRootKey="false">
+        <Value>Export Tutorial</Value>
+    </LocaleResource>
+    <LocaleResource Name="Plugins.Description.MyOrg.ExportTutorial" AppendRootKey="false">
+        <Value>This module adds an export.</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Plugins.MyOrg.ExportTutorial" AppendRootKey="false">
+        <Children>
+            <LocaleResource Name="Name">
+                <Value>Text to save</Value>
+            </LocaleResource>
+            <LocaleResource Name="Name.Hint">
+                <Value>Enter the text to be saved in the setting.</Value>
+            </LocaleResource>
+            <LocaleResource Name="MyTabValue">
+                <Value>Text to save</Value>
+            </LocaleResource>
+            <LocaleResource Name="MyTabValue.Hint">
+                <Value>Enter the text to be saved for this product.</Value>
+            </LocaleResource>
+            <LocaleResource Name="MyMenuItem">
+                <Value>Configure Module</Value>
+            </LocaleResource>
+            <LocaleResource Name="MySecondMenuItem">
+                <Value>Hello World</Value>
+            </LocaleResource>
+            <LocaleResource Name="MySubMenuItem">
+                <Value>Another way to configure</Value>
+            </LocaleResource>
+            <LocaleResource Name="NumberOfExportedRows">
+                <Value>Number of rows</Value>
+            </LocaleResource>
+            <LocaleResource Name="NumberOfExportedRows.Hint">
+                <Value>Number of rows to be exported.</Value>
+            </LocaleResource>
+        </Children>
+    </LocaleResource>
+</Language>

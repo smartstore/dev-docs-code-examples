@@ -1,0 +1,47 @@
+﻿@model ConfigurationModel
+
+@{
+    Layout = "_ConfigureModule";
+}
+
+@await Component.InvokeAsync("StoreScope")
+
+<widget target-zone="admin_button_toolbar_before">
+    <button id="SaveConfigButton" type="submit" name="save" class="btn btn-warning" value="save">
+        <i class="fa fa-check"></i>
+        <span>@T("Admin.Common.Save")</span>
+    </button>
+</widget>
+
+<form asp-action="Configure">
+    <div asp-validation-summary="All"></div>
+    <div class="adminContent">
+        <div class="adminRow">
+            <div class="adminTitle">
+                <smart-label asp-for="Name" />
+            </div>
+            <div class="adminData">
+                <setting-editor asp-for="Name"></setting-editor>
+                <span asp-validation-for="Name"></span>
+            </div>
+        </div>
+        <div class="adminRow">
+            <div class="adminTitle">
+                <smart-label asp-for="NumberOfDaysToDisplayNotification" />
+            </div>
+            <div class="adminData">
+                <setting-editor asp-for="NumberOfDaysToDisplayNotification"></setting-editor>
+                <span asp-validation-for="NumberOfDaysToDisplayNotification"></span>
+            </div>
+        </div>
+        <div class="adminRow">
+            <div class="adminTitle">
+                <smart-label asp-for="NumberOfDaysToKeepNotification" />
+            </div>
+            <div class="adminData">
+                <setting-editor asp-for="NumberOfDaysToKeepNotification"></setting-editor>
+                <span asp-validation-for="NumberOfDaysToKeepNotification"></span>
+            </div>
+        </div>
+    </div>
+</form>

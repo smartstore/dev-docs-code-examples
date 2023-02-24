@@ -1,0 +1,13 @@
+{
+  "$schema": "../module.schema.json",
+  "Author": "MyOrg",
+  "Group": "Admin",
+  "SystemName": "MyOrg.BlockTutorial",
+  "FriendlyName": "Block Tutorial",
+  "Description": "This module adds a block.",
+  "Version": "5.0",
+  "MinAppVersion": "5.0",
+  "Order": 1,
+  "ResourceRootKey": "Plugins.MyOrg.BlockTutorial",
+  "ProjectUrl": "https://myorg.com"
+}

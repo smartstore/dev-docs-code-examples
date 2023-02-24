@@ -1,0 +1,13 @@
+{
+  "$schema": "../module.schema.json",
+  "Author": "MyOrg",
+  "Group": "Admin",
+  "SystemName": "MyOrg.TabsTutorial",
+  "FriendlyName": "Tabs Tutorial",
+  "Description": "This module adds a tab.",
+  "Version": "5.0",
+  "MinAppVersion": "5.0",
+  "Order": 1,
+  "ResourceRootKey": "Plugins.MyOrg.TabsTutorial",
+  "ProjectUrl": "https://myorg.com"
+}

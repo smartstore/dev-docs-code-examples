@@ -1,0 +1,34 @@
+﻿<Language Name="English" IsDefault="false" IsRightToLeft="false">
+    <LocaleResource Name="Plugins.FriendlyName.MyOrg.MenuTutorial" AppendRootKey="false">
+        <Value>Menu Tutorial</Value>
+    </LocaleResource>
+    <LocaleResource Name="Plugins.Description.MyOrg.MenuTutorial" AppendRootKey="false">
+        <Value>This modul adds a menu.</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Plugins.MyOrg.MenuTutorial" AppendRootKey="false">
+        <Children>
+            <LocaleResource Name="Name">
+                <Value>Text to save</Value>
+            </LocaleResource>
+            <LocaleResource Name="Name.Hint">
+                <Value>Enter the text to be saved in the setting.</Value>
+            </LocaleResource>
+            <LocaleResource Name="MyTabValue">
+                <Value>Text to save</Value>
+            </LocaleResource>
+            <LocaleResource Name="MyTabValue.Hint">
+                <Value>Enter the text to be saved for this product.</Value>
+            </LocaleResource>
+            <LocaleResource Name="MyMenuItem">
+                <Value>Configure Module</Value>
+            </LocaleResource>
+            <LocaleResource Name="MySecondMenuItem">
+                <Value>Hello World</Value>
+            </LocaleResource>
+            <LocaleResource Name="MySubMenuItem">
+                <Value>Another way to configure</Value>
+            </LocaleResource>
+        </Children>
+    </LocaleResource>
+</Language>

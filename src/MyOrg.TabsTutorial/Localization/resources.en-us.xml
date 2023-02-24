@@ -1,0 +1,25 @@
+﻿<Language Name="English" IsDefault="false" IsRightToLeft="false">
+    <LocaleResource Name="Plugins.FriendlyName.MyOrg.TabsTutorial" AppendRootKey="false">
+        <Value>Tabs Tutorial</Value>
+    </LocaleResource>
+    <LocaleResource Name="Plugins.Description.MyOrg.TabsTutorial" AppendRootKey="false">
+        <Value>This module adds a tab.</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Plugins.MyOrg.TabsTutorial" AppendRootKey="false">
+        <Children>
+            <LocaleResource Name="Name">
+                <Value>Text to save</Value>
+            </LocaleResource>
+            <LocaleResource Name="Name.Hint">
+                <Value>Enter the text to be saved in the setting.</Value>
+            </LocaleResource>
+            <LocaleResource Name="MyTabValue">
+                <Value>Text to save</Value>
+            </LocaleResource>
+            <LocaleResource Name="MyTabValue.Hint">
+                <Value>Enter the text to be saved for this product.</Value>
+            </LocaleResource>
+        </Children>
+    </LocaleResource>
+</Language>

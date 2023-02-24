@@ -1,0 +1,20 @@
+﻿@model AdminEditTabModel
+
+@{
+    Layout = "";
+}
+
+<input type="hidden" name="CustomProperties[MyTab].__Type__" value="@Model.GetType().AssemblyQualifiedName" />
+<input type="hidden" asp-for="EntityId" />
+
+<div class="adminContent">
+    <div class="adminRow">
+        <div class="adminTitle">
+            <smart-label asp-for="MyTabValue" />
+        </div>
+        <div class="adminData">
+            <input asp-for="MyTabValue" />
+            <span asp-validation-for="MyTabValue"></span>
+        </div>
+    </div>
+</div>

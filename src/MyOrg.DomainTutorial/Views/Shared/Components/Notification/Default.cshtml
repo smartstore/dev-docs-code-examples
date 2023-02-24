@@ -1,0 +1,49 @@
+@model NotificationModel
+
+@{
+    Layout = "";
+
+    var IsLoggedIn = User.Identity.IsAuthenticated;
+}
+
+<div id="NotificationArea">
+    <div sm-if="@Model.HasNotification" class="rounded bg-light p-2 mb-3">
+        <p class="h3">@Model.Author</p>
+        <p class="pl-4 m-0">@Model.Message</p>
+        <p class="text-muted text-right font-italic m-0">@Model.Published</p>
+    </div>
+
+    <div sm-if="@IsLoggedIn">
+        <form id="CreateNotificationForm" class="border rounded p-2">
+            <div class="mb-3">
+                <smart-label asp-for="Message" class="form-label" />
+                <input type="text" name="NotificationMessage" class="form-control" placeholder='@T("Plugins.MyOrg.DomainTutorial.Message.Placeholder")'>
+            </div>
+            <button type="submit" class="btn btn-primary">@T("Plugins.MyOrg.DomainTutorial.Message.Add")</button>
+        </form>
+
+        <script>
+            let form = document.getElementById('CreateNotificationForm');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                let formData = new FormData(form);
+
+                fetch('@Url.Action("GenerateNotification", "DomainTutorial")', { method: 'POST', body: formData })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            displayNotification('@T("Plugins.MyOrg.DomainTutorial.Message.Success")', 'success');
+                            document.getElementById('NotificationArea').outerHTML = data.html;
+                        } else {
+                            displayNotification('@T("Plugins.MyOrg.DomainTutorial.Message.Error")', 'error');
+                        }
+                    })
+                    .catch(error => {
+                        displayNotification(error, 'error');
+                    });
+            });
+        </script>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+﻿<Language Name="English" IsDefault="false" IsRightToLeft="false">
+    <LocaleResource Name="Plugins.FriendlyName.MyOrg.DomainTutorial" AppendRootKey="false">
+        <Value>Domain Tutorial</Value>
+    </LocaleResource>
+    <LocaleResource Name="Plugins.Description.MyOrg.DomainTutorial" AppendRootKey="false">
+        <Value>This module adds a domain.</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Plugins.MyOrg.DomainTutorial" AppendRootKey="false">
+        <Children>
+            <LocaleResource Name="Name">
+                <Value>Text to save</Value>
+            </LocaleResource>
+            <LocaleResource Name="Name.Hint">
+                <Value>Enter the text to be saved in the setting.</Value>
+            </LocaleResource>
+            <LocaleResource Name="MyTabValue">
+                <Value>Text to save</Value>
+            </LocaleResource>
+            <LocaleResource Name="MyTabValue.Hint">
+                <Value>Enter the text to be saved for this product.</Value>
+            </LocaleResource>
+            <LocaleResource Name="MyMenuItem">
+                <Value>Configure Module</Value>
+            </LocaleResource>
+            <LocaleResource Name="MySecondMenuItem">
+                <Value>Hello World</Value>
+            </LocaleResource>
+            <LocaleResource Name="MySubMenuItem">
+                <Value>Another way to configure</Value>
+            </LocaleResource>
+            <LocaleResource Name="NumberOfExportedRows">
+                <Value>Number of rows</Value>
+            </LocaleResource>
+            <LocaleResource Name="NumberOfExportedRows.Hint">
+                <Value>Number of rows to be exported.</Value>
+            </LocaleResource>
+            <LocaleResource Name="Message">
+                <Value>Message</Value>
+            </LocaleResource>
+            <LocaleResource Name="Message.Hint">
+                <Value>A message to your customers.</Value>
+            </LocaleResource>
+            <LocaleResource Name="Message.Add">
+                <Value>Add a Notification.</Value>
+            </LocaleResource>
+            <LocaleResource Name="Message.Placeholder">
+                <Value>Leave a notification...</Value>
+            </LocaleResource>
+            <LocaleResource Name="Message.Success">
+                <Value>Notification inserted.</Value>
+            </LocaleResource>
+            <LocaleResource Name="Message.Error">
+                <Value>Notification could not be inserted.</Value>
+            </LocaleResource>
+            <LocaleResource Name="TaskName">
+                <Value>Cleanup Notifications</Value>
+            </LocaleResource>
+        </Children>
+    </LocaleResource>
+</Language>

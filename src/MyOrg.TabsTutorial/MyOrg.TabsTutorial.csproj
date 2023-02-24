@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+    <PropertyGroup>
+        <Product>A tabs tutorial for Smartstore</Product>
+        <OutputPath>..\..\Smartstore.Web\Modules\MyOrg.TabsTutorial</OutputPath>
+        <OutDir>$(OutputPath)</OutDir>
+    </PropertyGroup>
+</Project>

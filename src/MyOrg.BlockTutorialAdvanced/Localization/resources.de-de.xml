@@ -1,0 +1,25 @@
+﻿<Language Name="Deutsch" IsDefault="true" IsRightToLeft="false">
+    <LocaleResource Name="Plugins.FriendlyName.MyOrg.BlockTutorialAdvanced" AppendRootKey="false">
+        <Value>Fortgeschrittenes Block Tutorial</Value>
+    </LocaleResource>
+    <LocaleResource Name="Plugins.Description.MyOrg.BlockTutorialAdvanced" AppendRootKey="false">
+        <Value>Dieses Modul fügt einen fortgeschrittenen Block ein.</Value>
+    </LocaleResource>
+
+    <LocaleResource Name="Plugins.MyOrg.BlockTutorialAdvanced" AppendRootKey="false">
+        <Children>
+            <LocaleResource Name="Name">
+                <Value>Text zum Speichern</Value>
+            </LocaleResource>
+            <LocaleResource Name="Name.Hint">
+                <Value>Geben Sie hier den Text an, der in der Setting gespeichert werden soll.</Value>
+            </LocaleResource>
+            <LocaleResource Name="MyTabValue">
+                <Value>Text zum Speichern</Value>
+            </LocaleResource>
+            <LocaleResource Name="MyTabValue.Hint">
+                <Value>Geben Sie hier den Text an, der für dieses Produkt gespeichert werden soll.</Value>
+            </LocaleResource>
+        </Children>
+    </LocaleResource>
+</Language>

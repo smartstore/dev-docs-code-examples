@@ -1,0 +1,14 @@
+﻿@model DomainTutorialBlock
+
+<div class="adminContent">
+    <div class="adminRow">
+        <div class="adminTitle">
+            <smart-label asp-for="Name" />
+        </div>
+        <div class="adminData">
+            <setting-editor asp-for="Name"></setting-editor>
+            <span asp-validation-for="Name"></span>
+        </div>
+    </div>
+</div>
+<div>My local variable: @Model.MyLocalVar</div>

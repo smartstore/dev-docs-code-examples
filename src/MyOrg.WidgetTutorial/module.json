@@ -1,0 +1,13 @@
+{
+  "$schema": "../module.schema.json",
+  "Author": "MyOrg",
+  "Group": "Admin",
+  "SystemName": "MyOrg.WidgetTutorial",
+  "FriendlyName": "Widget Tutorial",
+  "Description": "This module adds a widget.",
+  "Version": "5.0",
+  "MinAppVersion": "5.0",
+  "Order": 1,
+  "ResourceRootKey": "Plugins.MyOrg.WidgetTutorial",
+  "ProjectUrl": "https://myorg.com"
+}
