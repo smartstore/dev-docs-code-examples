@@ -1,20 +1,36 @@
 # dev-docs-code-examples
-Contains all code examples used in the technical documentation.
+
+Contains all code examples used in the [technical documentation](https://smartstore.gitbook.io/developer-guide/compose/modules/examples).
 
 ## Introduction
 
 This repository contains all tutorial examples used in the SmartStore developer documentation.
-They can included using the **.sln** solution file.
+They can be included using the **.sln** solution file.
+
+## Installation
+
+1. Copy this repository to the same directory as your SmartStore repository.
+2. Run `create-symlinks.bat`.
+3. Open the `Smartstore.CodeExamples.sln` solution file.
 
 ## Directory structure
 
-### _/src_
+Place this repository in the same directory your SmartStore repository is in.
 
-All examples are located here.
+Example:
+- SmartStore repository: _/home/www/Smartstore/_
+- Place in _/home/www/_
+
+| Folder | Description                              |
+| ------ | ---------------------------------------- |
+| [root] | **Solution file** and **symlinks**       |
+| _/src_ | All **module** examples are located here.|
 
 ### Symlinks
 
-Using **create-symlinks.bat** all examples are accessible from one location.
+Creates symlinks, so that Smartstore can use the solution file and all of the modules.
+- The modules are each linked to _/Smartstore/src/Smartstore.Modules/_.
+- The solution file is linked to _/Smartstore/Smartstore.CodeExamples-sym.sln_.
 
 ## Tutorials
 
