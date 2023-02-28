@@ -11,7 +11,7 @@ namespace MyOrg.DomainTutorial
         {
             return new string[]
             {
-                "vc:MyOrg.DomainTutorial/DomainTutorialViewComponent"
+                "vc:MyOrg.DomainTutorial/DomainTutorial"
             };
         }
     }

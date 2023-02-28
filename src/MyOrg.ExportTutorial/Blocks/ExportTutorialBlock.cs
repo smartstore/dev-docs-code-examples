@@ -15,7 +15,7 @@ namespace MyOrg.ExportTutorial.Blocks
     [Block("exporttutorial", Icon = "fa fa-eye", FriendlyName = "Export Tutorial")]
     public class ExportTutorialBlockHandler : BlockHandlerBase<ExportTutorialBlock>
     {
-        public override async Task<ExportTutorialBlock> LoadAsync(IBlockEntity entity, StoryViewMode viewMode)
+        protected override ExportTutorialBlock Load(IBlockEntity entity, StoryViewMode viewMode)
         {
             var block = base.Load(entity, viewMode);
 
@@ -42,6 +42,7 @@ namespace MyOrg.ExportTutorial.Blocks
 
             return block;
         }
+
         protected override Task RenderCoreAsync(IBlockContainer element, IEnumerable<string> templates, IHtmlHelper htmlHelper, TextWriter textWriter)
         {
             if (templates.First() == "Edit")
@@ -65,12 +66,14 @@ namespace MyOrg.ExportTutorial.Blocks
             });
         }
     }
+
     public class ExportTutorialBlock : IBlock
     {
         [LocalizedDisplay("Plugins.MyOrg.ExportTutorial.Name")]
         public string Name { get; set; }
         public string MyLocalVar { get; set; } = "Initialised in Block";
     }
+
     public partial class ExportTutorialBlockValidator : AbstractValidator<ExportTutorialBlock>
     {
         public ExportTutorialBlockValidator()

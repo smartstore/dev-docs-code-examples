@@ -11,7 +11,7 @@ namespace MyOrg.ExportTutorial
         {
             return new string[]
             {
-                "vc:MyOrg.ExportTutorial/ExportTutorialViewComponent"
+                "vc:MyOrg.ExportTutorial/ExportTutorial"
             };
         }
     }

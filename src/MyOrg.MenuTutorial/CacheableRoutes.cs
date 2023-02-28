@@ -11,7 +11,7 @@ namespace MyOrg.MenuTutorial
         {
             return new string[]
             {
-                "vc:MyOrg.MenuTutorial/MenuTutorialViewComponent"
+                "vc:MyOrg.MenuTutorial/MenuTutorial"
             };
         }
     }

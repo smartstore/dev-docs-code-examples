@@ -21,6 +21,7 @@ namespace MyOrg.DomainTutorial.Controllers
         {
             _db = db;
         }
+
         [LoadSetting]
         public IActionResult PublicInfo(DomainTutorialSettings settings)
         {
@@ -28,11 +29,12 @@ namespace MyOrg.DomainTutorial.Controllers
 
             return View(model);
         }
+
         [HttpPost]
         public async Task<IActionResult> GenerateNotification(IFormCollection form)
         {
             var hasMessage = form.TryGetValue("NotificationMessage", out var notificationString);
-            var wasSuccessful = false;
+            var success = false;
 
             if (hasMessage)
             {
@@ -42,16 +44,12 @@ namespace MyOrg.DomainTutorial.Controllers
                     Message = notificationString,
                     Published = DateTime.UtcNow
                 });
-                wasSuccessful = _db.SaveChanges() == 1;
+                success = _db.SaveChanges() == 1;
             }
 
-            var vcHTML = await InvokeComponentAsync("Notification", null, null);
+            var html = await InvokeComponentAsync("Notification", null, null);
 
-            return Json(new
-            {
-                success = wasSuccessful,
-                html = vcHTML
-            });
+            return Json(new { success, html });
         }
     }
 }

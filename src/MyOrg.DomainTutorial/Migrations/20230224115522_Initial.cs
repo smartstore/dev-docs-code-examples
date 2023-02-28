@@ -20,7 +20,7 @@ namespace MyOrg.DomainTutorial.Migrations
                         .Indexed("IX_Notification_AuthorId")
                     .WithColumn(nameof(Notification.Published)).AsDateTime2().NotNullable()
                         .Indexed("IX_Notification_Published")
-                    .WithColumn(nameof(Notification.Message)).AsString().NotNullable();
+                    .WithColumn(nameof(Notification.Message)).AsMaxString().NotNullable();
             }
         }
 

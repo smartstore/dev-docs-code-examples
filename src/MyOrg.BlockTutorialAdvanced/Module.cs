@@ -16,9 +16,7 @@ namespace MyOrg.BlockTutorialAdvanced
             => new ComponentWidget(typeof(BlockTutorialAdvancedViewComponent), new { widgetZone, model, storeId });
 
         public string[] GetWidgetZones()
-        {
-            return new string[] { "productdetails_pictures_top" };
-        }
+            => new string[] { "productdetails_pictures_top" };
 
         public override async Task InstallAsync(ModuleInstallationContext context)
         {

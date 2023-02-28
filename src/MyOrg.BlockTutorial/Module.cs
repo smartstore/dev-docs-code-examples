@@ -16,10 +16,8 @@ namespace MyOrg.BlockTutorial
             => new ComponentWidget(typeof(BlockTutorialViewComponent), new { widgetZone, model, storeId });
 
         public string[] GetWidgetZones()
-        {
-            return new string[] { "productdetails_pictures_top" };
-        }
-
+            => new string[] { "productdetails_pictures_top" };
+    
         public override async Task InstallAsync(ModuleInstallationContext context)
         {
             // Saves the default state of a settings class to the database 

@@ -30,7 +30,9 @@ namespace MyOrg.DomainTutorial.Components
                 Message = string.Empty
             };
 
-            var notification = await _db.Notifications().OrderByDescending(x => x.Published).FirstOrDefaultAsync();
+            var notification = await _db.Notifications()
+                .OrderByDescending(x => x.Published)
+                .FirstOrDefaultAsync();
 
             if (notification == null)
             {
@@ -44,7 +46,7 @@ namespace MyOrg.DomainTutorial.Components
                 return View(model);
             }
 
-            model.Author = customer.FirstName.First() + ". " + customer.LastName;
+            model.Author = $"{customer.FirstName.First()}. {customer.LastName}";
             model.Published = notification.Published;
             model.Message = notification.Message;
 

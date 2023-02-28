@@ -11,7 +11,7 @@ namespace MyOrg.WidgetTutorial
         {
             return new string[]
             {
-                "vc:MyOrg.WidgetTutorial/WidgetTutorialViewComponent"
+                "vc:MyOrg.WidgetTutorial/WidgetTutorial"
             };
         }
     }

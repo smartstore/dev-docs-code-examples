@@ -3,7 +3,7 @@
 @{
     Layout = "";
 
-    var IsLoggedIn = User.Identity.IsAuthenticated;
+    var isLoggedIn = User.Identity.IsAuthenticated;
 }
 
 <div id="NotificationArea">
@@ -13,7 +13,7 @@
         <p class="text-muted text-right font-italic m-0">@Model.Published</p>
     </div>
 
-    <div sm-if="@IsLoggedIn">
+    <div sm-if="@isLoggedIn">
         <form id="CreateNotificationForm" class="border rounded p-2">
             <div class="mb-3">
                 <smart-label asp-for="Message" class="form-label" />

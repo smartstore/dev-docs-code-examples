@@ -13,12 +13,10 @@ namespace MyOrg.WidgetTutorial
             => new("Configure", "WidgetTutorialAdmin", new { area = "Admin" });
 
         public Widget GetDisplayWidget(string widgetZone, object model, int storeId)
-        => new ComponentWidget(typeof(WidgetTutorialViewComponent), new { widgetZone, model, storeId });
+            => new ComponentWidget(typeof(WidgetTutorialViewComponent), new { widgetZone, model, storeId });
 
         public string[] GetWidgetZones()
-        {
-            return new string[] { "productdetails_pictures_top" };
-        }
+            => new string[] { "productdetails_pictures_top" };
 
         public override async Task InstallAsync(ModuleInstallationContext context)
         {

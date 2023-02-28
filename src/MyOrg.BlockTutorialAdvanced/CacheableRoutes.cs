@@ -11,7 +11,7 @@ namespace MyOrg.BlockTutorialAdvanced
         {
             return new string[]
             {
-                "vc:MyOrg.BlockTutorialAdvanced/BlockTutorialAdvancedViewComponent"
+                "vc:MyOrg.BlockTutorialAdvanced/BlockTutorialAdvanced"
             };
         }
     }

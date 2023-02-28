@@ -11,7 +11,7 @@ namespace MyOrg.BlockTutorial
         {
             return new string[]
             {
-                "vc:MyOrg.BlockTutorial/BlockTutorialViewComponent"
+                "vc:MyOrg.BlockTutorial/BlockTutorial"
             };
         }
     }
