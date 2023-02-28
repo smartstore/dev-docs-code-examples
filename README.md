@@ -4,18 +4,18 @@ Contains all the code examples used in the [technical documentation](https://sma
 
 ## Introduction
 
-This repository contains all the tutorial examples used in the SmartStore developer documentation.
+This repository contains all the tutorial examples used in the Smartstore developer documentation.
 They can be included using the **.sln** solution file.
 
 ## Installation
 
-1. Copy this repository into the same directory as your SmartStore repository.
+1. Copy this repository into the same directory as your Smartstore repository.
 2. Run `create-symlinks.bat`.
 3. Open the `Smartstore.CodeExamples.sln` solution file.
 
 ## Directory structure
 
-Place this repository in the same directory as your SmartStore repository.
+Place this repository in the same directory as your Smartstore repository.
 
 Example:
 - SmartStore repository: _/home/www/Smartstore/_
