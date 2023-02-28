@@ -53,9 +53,24 @@
             <LocaleResource Name="Message.Error">
                 <Value>Notification could not be inserted.</Value>
             </LocaleResource>
+            <LocaleResource Name="NumberOfDaysToDisplayNotification">
+                <Value>Show notification for n days.</Value>
+            </LocaleResource>
+            <LocaleResource Name="NumberOfDaysToKeepNotification">
+                <Value>Keep notification for n days.</Value>
+            </LocaleResource>
             <LocaleResource Name="TaskName">
                 <Value>Cleanup Notifications</Value>
             </LocaleResource>
+            <!-- Grid -->
+            <LocaleResource Name="Grid.Notification" AppendRootKey="false">
+                <Children>
+                    <LocaleResource Name="Title">
+                        <Value>Notifications</Value>
+                    </LocaleResource>
+                </Children>
+            </LocaleResource>
+            <!-- Grid -->
         </Children>
     </LocaleResource>
 </Language>

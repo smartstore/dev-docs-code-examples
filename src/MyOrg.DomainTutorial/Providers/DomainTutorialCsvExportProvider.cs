@@ -56,9 +56,6 @@ namespace MyOrg.DomainTutorial.Providers
         {
             var config = (context.ConfigurationData as ProfileConfigurationModel) ?? new ProfileConfigurationModel();
 
-            // TODO: (mw) (core) Let's export some own domain values here & in XML provider
-            // Keep performance in mind. Collect product ids and get desired entities with one database request.
-
             using var writer = new CsvWriter(new StreamWriter(context.DataStream, Encoding.UTF8, 1024, true));
 
             writer.WriteFields(new string[]

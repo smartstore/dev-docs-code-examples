@@ -53,9 +53,24 @@
             <LocaleResource Name="Message.Error">
                 <Value>Mitteilung konnte nicht eingetragen werden.</Value>
             </LocaleResource>
-            <LocaleResource Name="TaskName">
-                <Value>Notifications aufräumen</Value>
+            <LocaleResource Name="NumberOfDaysToDisplayNotification">
+                <Value>Zeige eine Mitteilung für n Tage.</Value>
             </LocaleResource>
+            <LocaleResource Name="NumberOfDaysToKeepNotification">
+                <Value>Behalte eine Mitteilung für n Tage.</Value>
+            </LocaleResource>
+            <LocaleResource Name="TaskName">
+                <Value>Mitteilungen aufräumen</Value>
+            </LocaleResource>
+            <!-- Grid -->
+            <LocaleResource Name="Grid.Notification" AppendRootKey="false">
+                <Children>
+                    <LocaleResource Name="Title">
+                        <Value>Mitteilungen</Value>
+                    </LocaleResource>
+                </Children>
+            </LocaleResource>
+            <!-- Grid -->
         </Children>
     </LocaleResource>
 </Language>

@@ -1,0 +1,75 @@
+@model NotificationModel
+
+@{
+    var parentModel = ViewData["Parent"] as NotificationListModel;
+}
+
+<datagrid id="ntfc-grid"
+    allow-resize="true"
+    allow-column-reordering="true"
+    allow-edit="true">
+    <datasource read="@Url.Action("GridRead", "NotificationAdmin")"
+        delete="@Url.Action("GridDelete", "NotificationAdmin")" />
+    <paging position="Bottom" page-index="1" show-size-chooser="true" />
+    <sorting allow-unsort="true" allow-multisort="false" />
+    <search-panel>
+        <partial name="_Grid.Notification.Search" model="parentModel" />
+    </search-panel>
+    <toolbar>
+        <toolbar-group>
+            <button datagrid-action="DataGridToolAction.ToggleSearchPanel" type="button" class="btn btn-light btn-icon">
+                <i class="fa fa-fw fa-filter"></i>
+            </button>
+        </toolbar-group>
+        <toolbar-group>
+            <a href="#" data-toggle="modal" class="add-notification btn btn-primary btn-flat">
+                <i class="fa fa-plus"></i>
+                <span>@T("Common.AddNew")</span>
+            </a>
+        </toolbar-group>
+        <zone name="datagrid_toolbar_alpha"></zone>
+        <toolbar-group class="omega"></toolbar-group>
+        <zone name="datagrid_toolbar_omega"></zone>
+    </toolbar>
+    <columns>
+        <column for="Author">
+            <display-template>
+                <div class="text-truncate"><span class="text-truncate fwm">{{ item.value }}</span></div>
+            </display-template>
+        </column>
+        <column for="Published" />
+        <column for="Message">
+            <display-template>
+                <div class="text-truncate"><span class="text-truncate fwm">{{ item.value }}</span></div>
+            </display-template>
+        </column>
+        <column for="Published">
+            <display-template>
+                <div>{{ DateTime.Compare(DateTime.Now, item) }}</div>
+            </display-template>
+        </column>
+    </columns>
+    <row-commands>
+        <a datarow-action="DataRowAction.InlineEdit">@T("Common.Edit")</a>
+        <a datarow-action="DataRowAction.Delete">@T("Common.Delete")</a>
+    </row-commands>
+</datagrid>
+
+<script sm-target-zone="scripts">
+    $(function () {
+        $(document).on('click', '.add-notification', function (e) {
+            e.preventDefault();
+
+            var href = '@Url.Content("~/Admin/NotificationAdmin/Create/")?btnId=btnRefresh&formId=notification';
+            openPopup(href);
+
+            return false;
+        });
+
+        // Refresh grid after popup edit dialog was closed.
+        $(document).on('click', '#btnRefresh', function () {
+            window["notification-grid"].$children[0].read();
+            return false;
+        });
+    });
+</script>

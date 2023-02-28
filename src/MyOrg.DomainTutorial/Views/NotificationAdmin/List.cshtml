@@ -1,0 +1,19 @@
+@model NotificationModel
+
+@{
+    Layout = "_AdminLayout";
+    ViewBag.Title = T("Plugins.MyOrg.DomainTutorial.Grid.Notification.Title");
+    Assets.BodyAttributes.AppendCssClass("spa-layout");
+}
+
+<div class="section-header">
+    <div class="title">
+        <span>@(ViewBag.Title)</span>
+    </div>
+</div>
+
+<form id="notification">
+    <input type="submit" id="btnRefresh" name="btnRefresh" class="d-none" />
+</form>
+
+<partial name="_Grid.Notification" model="null" />

@@ -31,6 +31,14 @@ namespace MyOrg.DomainTutorial
 
             secondMenuNode.InsertAfter(menuNode);
             secondMenuNode.Append(subMenuNode);
+
+            // All notifications
+            modulesNode.Append(new MenuItem().ToBuilder()
+                .ResKey("Plugins.MyOrg.DomainTutorial.Grid.Notification.Title")
+                .Icon("chat-left-text", "bi")
+                .Id("domain-tutorial-notifications")
+                .Action("List", "NotificationAdmin", new { area = "Admin" })
+                .AsItem());
         }
     }
 }
