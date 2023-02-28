@@ -9,11 +9,13 @@ namespace MyOrg.BlockTutorial.Blocks
     {
         //Doing nothing means standard behaviour.
     }
+
     public class BlockTutorialBlock : IBlock
     {
         [LocalizedDisplay("Plugins.MyOrg.BlockTutorial.Name")]
         public string Name { get; set; }
     }
+
     public partial class BlockTutorialBlockValidator : AbstractValidator<BlockTutorialBlock>
     {
         public BlockTutorialBlockValidator()

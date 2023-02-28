@@ -15,7 +15,7 @@ namespace MyOrg.BlockTutorialAdvanced.Blocks
     [Block("blocktutorialadvanced", Icon = "fa fa-eye", FriendlyName = "Advanced Block Tutorial")]
     public class BlockTutorialAdvancedBlockHandler : BlockHandlerBase<BlockTutorialAdvancedBlock>
     {
-        public override async Task<BlockTutorialAdvancedBlock> LoadAsync(IBlockEntity entity, StoryViewMode viewMode)
+        protected override BlockTutorialAdvancedBlock Load(IBlockEntity entity, StoryViewMode viewMode)
         {
             var block = base.Load(entity, viewMode);
 
@@ -42,6 +42,7 @@ namespace MyOrg.BlockTutorialAdvanced.Blocks
 
             return block;
         }
+
         protected override Task RenderCoreAsync(IBlockContainer element, IEnumerable<string> templates, IHtmlHelper htmlHelper, TextWriter textWriter)
         {
             if (templates.First() == "Edit")
@@ -69,6 +70,7 @@ namespace MyOrg.BlockTutorialAdvanced.Blocks
     {
         [LocalizedDisplay("Plugins.MyOrg.BlockTutorialAdvanced.Name")]
         public string Name { get; set; }
+
         public string MyLocalVar { get; set; } = "Initialised in Block";
     }
     public partial class BlockTutorialAdvancedBlockValidator : AbstractValidator<BlockTutorialAdvancedBlock>

@@ -24,7 +24,7 @@ namespace MyOrg.BlockTutorial
             if (tabStripName == "product-edit")
             {
                 var entityId = ((TabbableModel)eventMessage.Model).Id;
-                // Add in a custom tab
+
                 await eventMessage.TabFactory.AppendAsync(builder => builder
                     .Text("My Tab")
                     .Name("tab-MyTab")

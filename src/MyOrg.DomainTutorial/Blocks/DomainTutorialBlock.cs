@@ -15,7 +15,7 @@ namespace MyOrg.DomainTutorial.Blocks
     [Block("domaintutorial", Icon = "fa fa-eye", FriendlyName = "Domain Tutorial")]
     public class DomainTutorialBlockHandler : BlockHandlerBase<DomainTutorialBlock>
     {
-        public override async Task<DomainTutorialBlock> LoadAsync(IBlockEntity entity, StoryViewMode viewMode)
+        protected override DomainTutorialBlock Load(IBlockEntity entity, StoryViewMode viewMode)
         {
             var block = base.Load(entity, viewMode);
 
@@ -42,6 +42,7 @@ namespace MyOrg.DomainTutorial.Blocks
 
             return block;
         }
+
         protected override Task RenderCoreAsync(IBlockContainer element, IEnumerable<string> templates, IHtmlHelper htmlHelper, TextWriter textWriter)
         {
             if (templates.First() == "Edit")
@@ -69,6 +70,7 @@ namespace MyOrg.DomainTutorial.Blocks
     {
         [LocalizedDisplay("Plugins.MyOrg.DomainTutorial.Name")]
         public string Name { get; set; }
+
         public string MyLocalVar { get; set; } = "Initialised in Block";
     }
     public partial class DomainTutorialBlockValidator : AbstractValidator<DomainTutorialBlock>

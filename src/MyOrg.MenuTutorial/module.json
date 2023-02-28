@@ -1,6 +1,6 @@
 {
   "$schema": "../module.schema.json",
-  "Author": "MyOrg",
+  "Author": "My Org",
   "Group": "Admin",
   "SystemName": "MyOrg.MenuTutorial",
   "FriendlyName": "Menu Tutorial",

@@ -71,6 +71,7 @@ namespace MyOrg.ExportTutorial.Blocks
     {
         [LocalizedDisplay("Plugins.MyOrg.ExportTutorial.Name")]
         public string Name { get; set; }
+
         public string MyLocalVar { get; set; } = "Initialised in Block";
     }
 
