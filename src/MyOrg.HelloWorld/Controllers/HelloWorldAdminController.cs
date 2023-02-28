@@ -1,15 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Smartstore.ComponentModel;
-using Smartstore.Core.Security;
 using MyOrg.HelloWorld.Models;
 using MyOrg.HelloWorld.Settings;
+using Smartstore.ComponentModel;
+using Smartstore.Core.Security;
 using Smartstore.Web.Controllers;
 using Smartstore.Web.Modelling.Settings;
 
 namespace MyOrg.HelloWorld.Controllers
 {
-    [Area("Admin")]
-    public class HelloWorldAdminController : ModuleController
+    public class HelloWorldAdminController : AdminController
     {
         [LoadSetting, AuthorizeAdmin]
         public IActionResult Configure(HelloWorldSettings settings)

@@ -16,11 +16,17 @@ namespace MyOrg.DomainTutorial.Migrations
             {
                 Create.Table(tableName)
                     .WithIdColumn() // Adds the Id column, which defaults to primary key.
-                    .WithColumn(nameof(Notification.AuthorId)).AsInt32().NotNullable()
+                    .WithColumn(nameof(Notification.AuthorId))
+                        .AsInt32()
+                        .NotNullable()
                         .Indexed("IX_Notification_AuthorId")
-                    .WithColumn(nameof(Notification.Published)).AsDateTime2().NotNullable()
+                    .WithColumn(nameof(Notification.Published))
+                        .AsDateTime2()
+                        .NotNullable()
                         .Indexed("IX_Notification_Published")
-                    .WithColumn(nameof(Notification.Message)).AsMaxString().NotNullable();
+                    .WithColumn(nameof(Notification.Message))
+                        .AsMaxString()
+                        .NotNullable();
             }
         }
 

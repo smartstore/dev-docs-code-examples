@@ -43,7 +43,10 @@ namespace MyOrg.DomainTutorial.Blocks
             return block;
         }
 
-        protected override Task RenderCoreAsync(IBlockContainer element, IEnumerable<string> templates, IHtmlHelper htmlHelper, TextWriter textWriter)
+        protected override Task RenderCoreAsync(IBlockContainer element,
+            IEnumerable<string> templates,
+            IHtmlHelper htmlHelper,
+            TextWriter textWriter)
         {
             if (templates.First() == "Edit")
             {

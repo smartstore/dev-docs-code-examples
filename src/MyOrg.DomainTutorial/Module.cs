@@ -38,8 +38,8 @@ namespace MyOrg.DomainTutorial
             => new ComponentWidget(typeof(DomainTutorialViewComponent), new { widgetZone, model, storeId });
 
         public string[] GetWidgetZones()
-            =>  new string[] { "productdetails_pictures_top" };
-    
+            => new string[] { "productdetails_pictures_top" };
+
         public override async Task InstallAsync(ModuleInstallationContext context)
         {
             // Saves the default state of a settings class to the database 
@@ -68,7 +68,7 @@ namespace MyOrg.DomainTutorial
             var profiles = await _db.ExportProfiles
                 .Include(x => x.Deployments)
                 .Include(x => x.Task)
-                .Where(x => x.ProviderSystemName == DomainTutorialCsvExportProvider.SystemName)
+                .Where(x => x.ProviderSystemName == DomainTutorialCsvExportProvider.SystemName || x.ProviderSystemName == DomainTutorialXmlExportProvider.SystemName)
                 .ToListAsync();
 
             await profiles.EachAsync(x => _exportProfileService.DeleteExportProfileAsync(x, true));

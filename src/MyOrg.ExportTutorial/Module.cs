@@ -32,7 +32,7 @@ namespace MyOrg.ExportTutorial
 
         public string[] GetWidgetZones()
             => new string[] { "productdetails_pictures_top" };
-        
+
         public override async Task InstallAsync(ModuleInstallationContext context)
         {
             // Saves the default state of a settings class to the database 
@@ -53,7 +53,7 @@ namespace MyOrg.ExportTutorial
             var profiles = await _db.ExportProfiles
                 .Include(x => x.Deployments)
                 .Include(x => x.Task)
-                .Where(x => x.ProviderSystemName == ExportTutorialCsvExportProvider.SystemName)
+                .Where(x => x.ProviderSystemName == ExportTutorialCsvExportProvider.SystemName || x.ProviderSystemName == ExportTutorialXmlExportProvider.SystemName)
                 .ToListAsync();
 
             await profiles.EachAsync(x => _exportProfileService.DeleteExportProfileAsync(x, true));

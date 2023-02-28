@@ -58,18 +58,17 @@ namespace MyOrg.DomainTutorial.Providers
 
             // TODO: (mw) (core) Let's export some own domain values here & in XML provider
             // Keep performance in mind. Collect product ids and get desired entities with one database request.
-            var columns = new string[]
+
+            using var writer = new CsvWriter(new StreamWriter(context.DataStream, Encoding.UTF8, 1024, true));
+
+            writer.WriteFields(new string[]
             {
                 "ProductName",
                 "SKU",
                 "Price",
                 "Savings",
                 "Description"
-            };
-
-            using var writer = new CsvWriter(new StreamWriter(context.DataStream, Encoding.UTF8, 1024, true));
-
-            writer.WriteFields(columns);
+            });
             writer.NextRow();
 
             while (context.Abort == DataExchangeAbortion.None && await context.DataSegmenter.ReadNextSegmentAsync())

@@ -56,18 +56,16 @@ namespace MyOrg.ExportTutorial.Providers
         {
             var config = (context.ConfigurationData as ProfileConfigurationModel) ?? new ProfileConfigurationModel();
 
-            var columns = new string[]
+            using var writer = new CsvWriter(new StreamWriter(context.DataStream, Encoding.UTF8, 1024, true));
+
+            writer.WriteFields(new string[]
             {
                 "ProductName",
                 "SKU",
                 "Price",
                 "Savings",
                 "Description"
-            };
-
-            using var writer = new CsvWriter(new StreamWriter(context.DataStream, Encoding.UTF8, 1024, true));
-
-            writer.WriteFields(columns);
+            });
             writer.NextRow();
 
             while (context.Abort == DataExchangeAbortion.None && await context.DataSegmenter.ReadNextSegmentAsync())

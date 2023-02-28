@@ -9,10 +9,10 @@
     <LocaleResource Name="Plugins.MyOrg.MenuTutorial" AppendRootKey="false">
         <Children>
             <LocaleResource Name="Name">
-                <Value>Text zum Speichern</Value>
+                <Value>Name des zu Grüßenden</Value>
             </LocaleResource>
             <LocaleResource Name="Name.Hint">
-                <Value>Geben Sie hier den Text an, der in der Setting gespeichert werden soll.</Value>
+                <Value>Geben Sie hier den Namen der Person an die gegrüßt werden soll.</Value>
             </LocaleResource>
             <LocaleResource Name="MyTabValue">
                 <Value>Text zum Speichern</Value>

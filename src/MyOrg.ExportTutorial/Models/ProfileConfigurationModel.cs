@@ -4,9 +4,10 @@ using Smartstore.Web.Modelling;
 namespace MyOrg.ExportTutorial.Models
 {
     [Serializable, CustomModelPart]
+    [LocalizedDisplay("Plugins.MyOrg.ExportTutorial.")]
     public class ProfileConfigurationModel
     {
-        [LocalizedDisplay("Plugins.MyOrg.ExportTutorial.NumberOfExportedRows")]
+        [LocalizedDisplay("*NumberOfExportedRows")]
         public int NumberOfExportedRows { get; set; } = 10;
     }
 }

@@ -9,10 +9,10 @@
     <LocaleResource Name="Plugins.MyOrg.BlockTutorialAdvanced" AppendRootKey="false">
         <Children>
             <LocaleResource Name="Name">
-                <Value>Text to save</Value>
+                <Value>Name to greet</Value>
             </LocaleResource>
             <LocaleResource Name="Name.Hint">
-                <Value>Enter the text to be saved in the setting.</Value>
+                <Value>Enter the name of the person to be greeted.</Value>
             </LocaleResource>
             <LocaleResource Name="MyTabValue">
                 <Value>Text to save</Value>
