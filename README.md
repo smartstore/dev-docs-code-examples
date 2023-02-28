@@ -15,7 +15,7 @@ They can be included using the **.sln** solution file.
 
 ## Directory structure
 
-Place this repository in the same directory as your Smartstore repository.
+Place this repository in the same directory as your Smartstore repository, otherwise creating the symlinks will fail.
 
 Example:
 - SmartStore repository: _/home/www/Smartstore/_
@@ -28,9 +28,14 @@ Example:
 
 ### Symlinks
 
-Creates symlinks, so that Smartstore can use the solution file and all of the modules.
+Since the modules and the solution must exist in both the sample repository and the Smartstore repository, it is necessary to connect them using symlinks.
+
 - The modules are each linked to _/Smartstore/src/Smartstore.Modules/_.
 - The solution file is linked to _/Smartstore/Smartstore.CodeExamples-sym.sln_.
+
+Running `sysmlinks.bat` will automatically create all the symlinks. If you want to add a module to this repository just add it to the list of modules in the symlinks.bat and run it again. Existing symlinks will not be touched, only new ones are added. If the location of a module changes you must delete the existing symlink in the Smartstore repository before running the `.bat` file again.
+
+This project structure is also well suited for developing your own modules.
 
 ## Tutorials
 
