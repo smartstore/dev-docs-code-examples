@@ -6,8 +6,8 @@ namespace MyOrg.DomainTutorial.Settings
     {
         public string Name { get; set; } = "John Smith";
 
-        public int DaysToShowNotification { get; set; } = 8;
+        public int NumberOfDaysToDisplayNotification { get; set; } = 8;
 
-        public int DaysToKeepNotification { get; set; } = 10;
+        public int NumberOfDaysToKeepNotification { get; set; } = 10;
     }
 }

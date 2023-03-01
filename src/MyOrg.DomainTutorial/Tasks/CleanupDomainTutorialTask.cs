@@ -23,7 +23,7 @@ namespace MyOrg.DomainTutorial.Tasks
 
         public async Task Run(TaskExecutionContext ctx, CancellationToken cancelToken = default)
         {
-            var date = DateTime.UtcNow.AddDays(-_settings.DaysToKeepNotification);
+            var date = DateTime.UtcNow.AddDays(-_settings.NumberOfDaysToKeepNotification);
 
             await _db.Notifications()
                 .Where(x => x.Published < date)

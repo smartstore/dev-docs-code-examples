@@ -1,12 +1,11 @@
-﻿using System;
-using Smartstore.Web.Modelling;
+﻿using Smartstore.Web.Modelling;
 
 namespace MyOrg.DomainTutorial.Models
 {
+    [LocalizedDisplay("Plugins.MyOrg.DomainTutorial.Notification.Grid.")]
     public class NotificationListModel : EntityModelBase
     {
-        public DateTime SearchPublished { get; set; }
-
+        [LocalizedDisplay("*Search.Message")]
         public string SearchMessage { get; set; }
     }
 }

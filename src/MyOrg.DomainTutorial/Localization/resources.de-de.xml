@@ -42,7 +42,7 @@
                 <Value>Eine Nachricht an die Kunden.</Value>
             </LocaleResource>
             <LocaleResource Name="Message.Add">
-                <Value>Mitteilung hinzufügen.</Value>
+                <Value>Mitteilung hinzufügen</Value>
             </LocaleResource>
             <LocaleResource Name="Message.Placeholder">
                 <Value>Hinterlasse eine Mitteilung...</Value>
@@ -63,10 +63,43 @@
                 <Value>Mitteilungen aufräumen</Value>
             </LocaleResource>
             <!-- Grid -->
-            <LocaleResource Name="Grid.Notification" AppendRootKey="false">
+            <LocaleResource Name="Notification" AppendRootKey="false">
                 <Children>
-                    <LocaleResource Name="Title">
-                        <Value>Mitteilungen</Value>
+                    <LocaleResource Name="Author">
+                        <Value>Autor</Value>
+                    </LocaleResource>
+                    <LocaleResource Name="Published">
+                        <Value>Veröffentlicht</Value>
+                    </LocaleResource>
+                    <LocaleResource Name="Message">
+                        <Value>Nachrichten Inhalt</Value>
+                    </LocaleResource>
+                    <LocaleResource Name="Grid">
+                        <Children>
+                            <LocaleResource Name="Title">
+                                <Value>Mitteilungen</Value>
+                            </LocaleResource>
+                            <LocaleResource Name="RemovalMessage">
+                                <Value>Wird gelöscht</Value>
+                                <Children>
+                                    <LocaleResource Name="Today">
+                                        <Value>Heute</Value>
+                                    </LocaleResource>
+                                    <LocaleResource Name="Tomorrow">
+                                        <Value>Morgen</Value>
+                                    </LocaleResource>
+                                    <LocaleResource Name="InXDays">
+                                        <Value>In {0} Tagen</Value>
+                                    </LocaleResource>
+                                </Children>
+                            </LocaleResource>
+                            <LocaleResource Name="Search.Message">
+                                <Value>Nachrichten Inhalt</Value>
+                            </LocaleResource>
+                            <LocaleResource Name="UserNotFound">
+                                <Value>Benutzer nicht gefunden.</Value>
+                            </LocaleResource>
+                        </Children>
                     </LocaleResource>
                 </Children>
             </LocaleResource>
