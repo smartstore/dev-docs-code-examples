@@ -1,4 +1,4 @@
-# dev-docs-code-examples
+# Smartstore Code Examples
 
 Contains all the code examples used in the [technical documentation](https://smartstore.gitbook.io/developer-guide/compose/modules/examples).
 
