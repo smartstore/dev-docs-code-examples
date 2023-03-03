@@ -66,13 +66,13 @@ Access the menu bar in the backend and add a menu item and a submenu.
 ### Blocks
 
 Create your own PageBuilder-Block to display in stories.  
-&rarr; Source code for [BlockTutorial Tutorial](./src/MyOrg.BlockTutorialTutorial)  
+&rarr; Source code for [Block Tutorial](./src/MyOrg.BlockTutorial)  
 &rarr; Developer documentation for [Creating a Block](https://smartstore.gitbook.io/developer-guide/compose/modules/examples/creating-a-block)
 
 #### Blocks (Advanced)
 
 Tweak the Story view modes, to provide a better user experience and render a widget.  
-&rarr; Source code for [BlockTutorialAdvanced Tutorial](./src/MyOrg.BlockTutorialAdvancedTutorial)  
+&rarr; Source code for [Block Tutorial Advanced](./src/MyOrg.BlockTutorialAdvanced)  
 &rarr; Developer documentation for [Creating a Block](https://smartstore.gitbook.io/developer-guide/compose/modules/examples/creating-a-block#advanced-topics)
 
 ### Export
