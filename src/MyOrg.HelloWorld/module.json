@@ -5,8 +5,8 @@
   "SystemName": "MyOrg.HelloWorld",
   "FriendlyName": "Hello World",
   "Description": "This plugin says Hello World",
-  "Version": "5.0",
-  "MinAppVersion": "5.0",
+  "Version": "5.0.5",
+  "MinAppVersion": "5.0.5",
   "Order": 1,
   "ResourceRootKey": "Plugins.MyOrg.HelloWorld",
   "ProjectUrl": "https://myorg.com"

@@ -5,8 +5,8 @@
   "SystemName": "MyOrg.ExportTutorial",
   "FriendlyName": "Export Tutorial",
   "Description": "This module adds an export.",
-  "Version": "5.0",
-  "MinAppVersion": "5.0",
+  "Version": "5.0.5",
+  "MinAppVersion": "5.0.5",
   "Order": 1,
   "ResourceRootKey": "Plugins.MyOrg.ExportTutorial",
   "ProjectUrl": "https://myorg.com"
