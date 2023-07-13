@@ -1,0 +1,5 @@
+﻿<Language Name="English" IsDefault="false" IsRightToLeft="false">
+    <LocaleResource Name="VisitShop">
+        <Value>Visit Shop</Value>
+    </LocaleResource>
+</Language>

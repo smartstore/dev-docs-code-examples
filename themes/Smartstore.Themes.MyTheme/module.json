@@ -1,0 +1,12 @@
+{
+  "$schema": "../module.schema.json",
+  "SystemName": "Smartstore.Themes.MyTheme",
+  "FriendlyName": "My Theme",
+  "Theme": "MyTheme",
+  "Author": "My Org",
+  "Group": "CMS",
+  "Version": "5.0.5",
+  "MinAppVersion": "5.0.5",
+  "Order": 1,
+  "ResourceRootKey": "Plugins.Smartstore.MyTheme"
+}
