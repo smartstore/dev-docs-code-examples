@@ -11,7 +11,7 @@ They can be included using the **.sln** solution file.
 
 1. Copy this repository into the same directory as your Smartstore repository.
 2. Run `create-symlinks.bat`.
-3. Open the `Smartstore.CodeExamples-sym.sln` solution file.
+3. Open Visual Studio, click **Open a project or solution** and select `Smartstore.CodeExamples-sym.sln` solution file.
 
 ## Directory structure
 
