@@ -11,6 +11,7 @@ They can be included using the **.sln** solution file.
 
 1. Copy this repository into the same directory as your Smartstore repository.
 2. Run `create-symlinks.bat`.
+	1. Run `create-theme-symlinks.bat`, if you want to install a theme.
 3. Open Visual Studio, click **Open a project or solution** and select `Smartstore.CodeExamples-sym.sln` solution file.
 
 ## Directory structure
@@ -18,7 +19,7 @@ They can be included using the **.sln** solution file.
 Place this repository in the same directory as your Smartstore repository, otherwise creating the symlinks will fail.
 
 Example:
-- SmartStore repository: _/home/www/Smartstore/_
+- Smartstore repository: _/home/www/Smartstore/_
 - Place in _/home/www/_
 
 | Folder | Description                              |
@@ -86,3 +87,11 @@ Provide a configurable export for products, store information, etc.
 Create a small messaging system, using your own database table.  
 &rarr; Source code for [Domain Tutorial](./src/MyOrg.DomainTutorial)  
 &rarr; Developer documentation for [Creating a Domain entity](https://smartstore.gitbook.io/developer-guide/compose/modules/examples/creating-a-domain-entity)
+
+## Themes
+
+### Basic module
+
+A blueprint of a theme module.
+&rarr; Source code for [Basic theme](./themes/Smartstore.Themes.MyTheme)  
+&rarr; Developer documentation for [Theme modules](https://smartstore.gitbook.io/developer-guide/compose/theming/theme-modules)
