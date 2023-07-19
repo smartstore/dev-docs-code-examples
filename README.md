@@ -92,6 +92,6 @@ Create a small messaging system, using your own database table.
 
 ### Basic module
 
-A blueprint of a theme module.
+A blueprint of a theme module.  
 &rarr; Source code for [Basic theme](./themes/Smartstore.Themes.MyTheme)  
 &rarr; Developer documentation for [Theme modules](https://smartstore.gitbook.io/developer-guide/compose/theming/theme-modules)
